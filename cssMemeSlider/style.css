@@ -1,0 +1,30 @@
+html {
+    font-size: 10px;
+    background-color: black;
+  }
+
+body {
+    max-width: 1440px;
+    color: white;
+    font-size: 3rem;
+}
+
+.control-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.controls {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.control {
+    width: 15px;
+    height: 15px;
+    border: 1px solid goldenrod;
+    border-radius: 50px;
+    background-color: goldenrod;
+}
