@@ -9,14 +9,16 @@
   </head>
   <body>
     <div class="image-wrapper">
-      <img src="assets/memes/1.png" alt="" />
-      <img src="assets/memes/2.png" alt="" />
-      <img src="assets/memes/3.png" alt="" />
-      <img src="assets/memes/4.png" alt="" />
+      <div class="image-line">
+        <img class="image-slid" src="assets/memes/1.png" alt="" />
+        <img class="image-slid" src="assets/memes/2.png" alt="" />
+        <img class="image-slid" src="assets/memes/3.png" alt="" />
+        <img class="image-slid" src="assets/memes/4.png" alt="" />
+      </div>
     </div>
     <div class="control-wrapper">
       <div class="controls">
-        <div class="control"></div>
+        <div class="control active-control"></div>
       </div>
       <div class="controls">
         <div class="control"></div>
@@ -25,10 +27,11 @@
       <div class="controls"><div class="control"></div></div>
     </div>
     <div class="text-wrapper">
-      <p>What to do???</p>
-      <p>Mission Impossible</p>
-      <p>The main thing is to shine</p>
-      <p>And tarot spread</p>
+      <p class="text active-text">What to do???</p>
+      <p class="text">Mission Impossible</p>
+      <p class="text">The main thing is to shine</p>
+      <p class="text">And tarot spread</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
