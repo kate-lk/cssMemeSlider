@@ -125,4 +125,17 @@ margin-left: 0;
   opacity: 1;
   } 
 
+
+  @media (max-width: 768px) {
+    
+.controls {
+  margin-top: 3rem;
+  display: block;
+  text-align: center;
+}
+
+.text-wrapper {
+  text-align: left;
+}
+  }
   
