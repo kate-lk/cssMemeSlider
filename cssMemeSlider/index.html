@@ -8,7 +8,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="image-wrapper">
+
+    <div class="wrapper">
+     <input type="radio" name="s" id="slide1" checked>
+      <input type="radio" name="s" id="slide2">
+      <input type="radio" name="s" id="slide3">
+      <input type="radio" name="s" id="slide4">
+
+      <div class="slides">
+         
+        <div class="slide s1">
+         <img src="assets/memes/1.png" alt="">
+         <p class="text active-text">What to do???</p>
+         
+        </div>
+        <div class="slide">
+          <img src="assets/memes/2.png" alt="">
+          <p class="text">Mission Impossible</p>
+        </div>
+        <div class="slide">
+          <img src="assets/memes/3.png" alt="">
+          <p class="text">The main thing is to shine</p>
+        </div>
+        <div class="slide">
+          <img src="assets/memes/4.png" alt="">
+          <p class="text">And tarot spread</p>
+        </div>
+        
+      </div>
+      <div class="controls">
+        <label for="slide1" class="dot1"></label>
+        <label for="slide2" class="dot2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+    </div>
+
+
+    <!-- <div class="image-wrapper">
       <div class="image-line">
         <img class="image-slid" src="assets/memes/1.png" alt="" />
         <img class="image-slid" src="assets/memes/2.png" alt="" />
@@ -35,6 +72,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
   </body>
 </html>
