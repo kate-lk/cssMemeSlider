@@ -1,100 +1,3 @@
-/* html {
-  font-size: 10px;
-  background-color: black;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 1440px;
-  color: white;
-  font-size: 4rem;
-}
-
-.control-wrapper {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.controls {
-  margin: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.controls:hover {
-  .control {
-    background-color: white;
-    border-color: white;
-  }
-}
-
-.controls:active {
-  .control {
-    background-color: white;
-    border-color: white;
-    opacity: 0.5;
-  }
-}
-
-.control {
-  width: 2rem;
-  height: 2rem;
-  border: 0.3rem solid goldenrod;
-  border-radius: 5rem;
-  background-color: goldenrod;
-}
-
-.active-control {
-  background-color: black;
-}
-
-.image-wrapper {
-  text-align: center;
-  max-width: 83rem;
-  margin: 3rem auto;
-  overflow: hidden;
-  border-radius: 0.5rem;
-}
-
-.image-line {
-  align-items: center;
-  display: flex;
-  transition: all ease 1s;
-}
-
-.text {
-  display: none;
-}
-
-.active-text {
-  display: block;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5rem;
-}
-
-@media (max-width: 768px) {
-  .image-wrapper {
-    max-width: 53rem;
-  }
-  .wrapper {
-    display: block;
-  }
-  .control-wrapper {
-    justify-content: center;
-  }
-  .text-wrapper {
-    margin-left: 2rem;
-  }
-} */
-
-
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -103,8 +6,7 @@ body {
 }
 
 .wrapper {
-  /* height: 980px; */
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 3rem auto;
   overflow: hidden;
 }
@@ -118,7 +20,7 @@ body {
 
 .slide {
   width: 25%;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }
 
 .slide img {
@@ -130,37 +32,39 @@ body {
   display: none;
 }
 
-.slide > p {
-  font-size: 2.5rem;
-  margin-top: 2.4rem;
-}
+/* .slide > p {
+  font-size: 3.5rem;
+  margin-top: 2rem;
+} */
 
 .wrapper label {
   cursor: pointer;
-  border: 3px solid goldenrod;
+  border: 0.2rem solid goldenrod;
   background-color: goldenrod;
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 15px;
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
   border-radius: 50%;
-  /* transition: background ease-in-out .5s; */
 }
 
 .wrapper label:hover {
-  border: 3px solid white;
+  border: 0.2rem solid white;
   background-color: black;
 }
+
 
 .controls {
   margin-top: 3rem;
   display: flex;
-  justify-content: end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+align-items: center;
 }
 
 .controls label:active {
   background-color: black;
-  border: 3px solid goldenrod;
+  border: 0.2rem solid goldenrod;
 }
 
 #slide1:checked ~ .controls label:nth-of-type(1),
@@ -168,7 +72,7 @@ body {
 #slide3:checked ~ .controls label:nth-of-type(3),
 #slide4:checked ~ .controls label:nth-of-type(4) {
   background-color: black;
-  border: 3px solid goldenrod;
+  border: 0.2rem solid goldenrod;
 } 
 
 #slide1:checked ~ .slides .s1{
@@ -186,3 +90,39 @@ margin-left: 0;
   margin-left: -75%;
 }
 
+
+.text {
+  font-size: 3.5rem;
+  opacity: 0;
+  display: none;
+  animation: fadeInFromNone 0.8s ease-out;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  0% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+#slide1:checked ~ .controls p:nth-of-type(1),
+#slide2:checked ~ .controls p:nth-of-type(2),
+#slide3:checked ~ .controls p:nth-of-type(3),
+#slide4:checked ~ .controls p:nth-of-type(4)
+{
+  font-size: 3.5rem;
+  display: block;
+  opacity: 1;
+  } 
+
+  
